@@ -13,7 +13,7 @@ class _InputChipDemoState extends State<InputChipDemo> {
 
   void addNewChip() {
     setState(() {
-      choices.add('New Chip');
+      choices.add('New Chip ');
     });
   }
 
