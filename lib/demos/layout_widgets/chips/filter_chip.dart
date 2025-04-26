@@ -26,7 +26,6 @@ class _FilterChipDemoState extends State<FilterChipDemo> {
                 FilterChip(
                   label: Text(choices[index]),
                   selected: value == index,
-
                   onDeleted: () {
                     setState(() {
                       setState(() => choices.removeAt(index));
