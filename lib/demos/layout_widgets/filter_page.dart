@@ -66,7 +66,6 @@ class _FilterPageState extends State<FilterPage> {
                     width: double.infinity,
                     height: 60,
                     child: TextField(
-
                       decoration: InputDecoration(
                         hintStyle: TextStyle(color: fontColor),
                         filled: true,
@@ -203,10 +202,7 @@ class _FilterPageState extends State<FilterPage> {
                       ),
                       child: Text(
                         "Save Changes",
-                        style: TextStyle(
-                          fontSize: 20,
-                          color: Colors.black,
-                        ),
+                        style: TextStyle(fontSize: 20, color: Colors.black),
                       ),
                     ),
                   ),
