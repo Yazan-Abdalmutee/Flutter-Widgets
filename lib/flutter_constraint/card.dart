@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-class TestDemo extends StatelessWidget {
-  const TestDemo({super.key});
+class CardDemo extends StatelessWidget {
+  const CardDemo({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -18,16 +18,17 @@ class TestHomePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: const Text('Widgets'), centerTitle: true),
+      appBar: AppBar(title: const Text('Card Constraint'), centerTitle: true),
+      body: cardInLimitedSize(),
+    );
+  }
 
-      body: Expanded(
-        child: Text(
-          maxLines: 1,
-          overflow: TextOverflow.ellipsis,
-          "This is a very long sentence that",
-          style: TextStyle(fontSize: 30),
-        ),
-      ),
+  Widget cardInLimitedSize() {
+    return Container(
+      width: 200,
+      height: 200,
+      color: Colors.green,
+      child: Card(color: Colors.red),
     );
   }
 }
